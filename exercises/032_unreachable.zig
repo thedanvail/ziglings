@@ -26,15 +26,10 @@ pub fn main() void {
 
     for (operations) |op| {
         switch (op) {
-            1 => {
-                current_value += 1;
-            },
-            2 => {
-                current_value -= 1;
-            },
-            3 => {
-                current_value *= current_value;
-            },
+            1 => { current_value += 1; },
+            2 => { current_value -= 1; },
+            3 => { current_value *= current_value; },
+            else => unreachable,
         }
 
         std.debug.print("{} ", .{current_value});

@@ -50,7 +50,7 @@ const Alien = struct {
 
     // We hate this method:
     pub fn hatch(strength: u8) Alien {
-        return Alien{
+        return Alien {
             .health = strength * 5,
         };
     }
@@ -88,7 +88,7 @@ pub fn main() void {
         for (&aliens) |*alien| {
 
             // *** Zap the alien with the heat ray here! ***
-            ???.zap(???);
+            heat_ray.zap(alien);
 
             // If the alien's health is still above 0, it's still alive.
             if (alien.health > 0) aliens_alive += 1;

@@ -22,7 +22,7 @@
 // What's interesting is that p5 and p6 act like p1 and p2, but point to
 // the value at "unlocked". This is what we mean when we say that we can
 // make a constant reference to any value!
-//
+
 const std = @import("std");
 
 pub fn main() void {
@@ -31,7 +31,7 @@ pub fn main() void {
 
     // Please define pointer "p" so that it can point to EITHER foo or
     // bar AND change the value it points to!
-    ??? p: ??? = undefined;
+    var p: *u8 = undefined;
 
     p = &foo;
     p.* += 1;

@@ -17,7 +17,7 @@ const std = @import("std");
 
 var counter: u32 = 0;
 
-const MyErr = error{ GetFail, IncFail };
+const MyErr = error { GetFail, IncFail };
 
 pub fn main() void {
     // We simply quit the entire program if we fail to get a number:
@@ -32,7 +32,7 @@ fn makeNumber() MyErr!u32 {
 
     // Please make the "failed" message print ONLY if the makeNumber()
     // function exits with an error:
-    std.debug.print("failed!\n", .{});
+    errdefer std.debug.print("failed!\n", .{});
 
     var num = try getNumber(); // <-- This could fail!
 
