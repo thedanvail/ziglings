@@ -4,8 +4,6 @@ Welcome to Ziglings! This project contains a series of tiny
 broken programs (and one nasty surprise).  By fixing them, you'll
 learn how to read and write [Zig](https://ziglang.org/) code.
 
-![Ziglings](images/ziglings.jpg "Ziglings")
-
 Those broken programs need your help! (You'll also save the
 planet from evil aliens and help some friendly elephants stick
 together, which is very sweet of you.)
